@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
     public float mov;
     bool canJump = true;
+    bool isRight = true;
     void Start()
     {
         sprite = gameObject.GetComponent<SpriteRenderer>();
@@ -28,6 +29,18 @@ public class PlayerController : MonoBehaviour
             rb2d.AddRelativeForce(Vector2.up*25, ForceMode2D.Impulse);
             canJump = false;
         }
+        if(rb2d.velocity.x > 0 & !isRight)
+        {
+            sprite.flipX = !sprite.flipX;
+            isRight = true;
+        }
+
+        if (rb2d.velocity.x < 0 & isRight)
+        {
+            sprite.flipX = !sprite.flipX;
+            isRight = false;
+        }
+
 
         anim.SetFloat("mov", rb2d.velocity.sqrMagnitude);
     }
