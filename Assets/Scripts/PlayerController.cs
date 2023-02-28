@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.H))
         {
-            sprite.flipX = !sprite.flipX;
+            transform.Rotate(new Vector3(0, 180, 0));
         }
         rb2d.velocity = new Vector2(Input.GetAxisRaw("Horizontal")*mov,rb2d.velocity.y);
         if (Input.GetButtonUp("Jump") & canJump){                    
