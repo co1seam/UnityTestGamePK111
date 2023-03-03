@@ -34,19 +34,23 @@ public class PlayerController : MonoBehaviour
             sprite.flipX = !sprite.flipX;
             isRight = true;
         }
-
         if (rb2d.velocity.x < 0 & isRight)
         {
             sprite.flipX = !sprite.flipX;
             isRight = false;
         }
-
-
         anim.SetFloat("mov", rb2d.velocity.sqrMagnitude);
+        if(Input.GetButtonUp("Jump"))
+        {
+            anim.SetBool("jumpStart", true);
+            anim.SetBool("jumpStop", false);
+        }
     }
     private void OnTriggerEnter2D(Collider2D other) {
         Debug.Log("Ой!");
         canJump = true;
+        anim.SetBool("jumpStart", false);
+        anim.SetBool("jumpStop", true);
     }
     private void OnTriggerExit2D(Collider2D other) {
         Debug.Log("Не ой!!");
