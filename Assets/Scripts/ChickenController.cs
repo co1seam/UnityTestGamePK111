@@ -7,7 +7,7 @@ public class ChickenController : MonoBehaviour
     Rigidbody2D rb2d;
     Vector3 startPos;
     [SerializeField]
-    float distance = 3f;
+    float maxDistance = 3f;
     int dir = 1;
     void Start()
     {
@@ -19,10 +19,13 @@ public class ChickenController : MonoBehaviour
     void Update()
     {
         float currentDistance = Vector3.Distance(startPos, transform.position);
-        if(currentDistance >= distance)
-        {
 
+        if(currentDistance >= maxDistance)
+        {
+            dir *= -1;
         }
-        rb2d.velocity = Vector2.right*dir;
+
+        rb2d.velocity = Vector2.right * dir;
+        rb2d.velocity = Vector2.left * dir;
     }
 }
