@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
     public float mov;
     bool canJump = true;
     bool isRight = true;
+    [SerializeField]
+    int HP = 100;
+    bool canMove = true;
     void Start()
     {
         sprite = gameObject.GetComponent<SpriteRenderer>();
@@ -24,7 +27,12 @@ public class PlayerController : MonoBehaviour
         {
             transform.Rotate(new Vector3(0, 180, 0));
         }
-        rb2d.velocity = new Vector2(Input.GetAxisRaw("Horizontal")*mov,rb2d.velocity.y);
+
+        if (canJump)
+        {
+            rb2d.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * mov, rb2d.velocity.y);
+        }
+
         if (Input.GetButtonUp("Jump") & canJump){                    
             rb2d.AddRelativeForce(Vector2.up*25, ForceMode2D.Impulse);
             canJump = false;
@@ -55,5 +63,11 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other) {
         Debug.Log("Не ой!!");
         canJump = false;
+    }
+
+    public void TakeDmg(int _dmg)
+    {
+        HP -= _dmg;
+        canMove = false;
     }
 }
