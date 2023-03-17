@@ -49,11 +49,17 @@ public class ChickenController : MonoBehaviour
     {
         transform.Rotate(0, 180, 0);
     }
-    private void OnTriggerEnter2D(Collider2D other)
+
+    public void Death()
+    {
+        Destroy(gameObject);
+    }
+    /*private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
             other.GetComponent<PlayerController>().TakeDmg(1, transform.position.x);
         }
     }
+    */
 }

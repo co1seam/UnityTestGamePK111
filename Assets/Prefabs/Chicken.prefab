@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4841378460322697743}
   - component: {fileID: 4890498839946298006}
   - component: {fileID: 5030856255525447302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chicken
   m_TagString: Mob
   m_Icon: {fileID: 0}

@@ -2432,7 +2432,7 @@ GameObject:
   - component: {fileID: 1713821935}
   - component: {fileID: 1713821937}
   - component: {fileID: 1713821938}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2545,6 +2545,9 @@ MonoBehaviour:
   anim: {fileID: 0}
   mov: 13
   HP: 100
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!95 &1713821937
 Animator:
   serializedVersion: 5
@@ -7023,7 +7026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2136844039}
   - component: {fileID: 2136844040}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: isGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}

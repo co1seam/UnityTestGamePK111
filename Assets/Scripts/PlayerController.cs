@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     [Range(0, .3f)] private float movementSmoothing = .05f;
     float move;
+    [SerializeField]
+    LayerMask enemyMask;
     void Start()
     {
         sprite = gameObject.GetComponent<SpriteRenderer>();
@@ -96,4 +98,14 @@ public class PlayerController : MonoBehaviour
     {
         canMove = true;
     }
+    public void Kill()
+    {
+    Collider2D enemy = Physics2D.OverlapCircle(transform.position + new Vector3(1.5f, -1.9f, 9), 0.1f, enemyMask);
+        if (enemy != null && enemy.CompareTag("Enemy"))
+        {
+            enemy.GetComponent<ChickenController>().Death();
+        }
+    }
+    //x + 1.5
+    //y - 1.9
 }
