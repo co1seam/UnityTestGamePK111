@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d467004a2ec0a2b4fa55b1934a2ac7dd
+guid: 5fe25aa59fdd0dd4dbfcd59173b2c907
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: _Fall_0
+      name: _Attack2NoMovement_0
       rect:
         serializedVersion: 2
-        x: 39
+        x: 30
         y: 0
-        width: 29
-        height: 38
+        width: 38
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79c070cf00d8f5841bc1e29e69699534
-      internalID: -154271472
+      spriteID: 890bf0cc048392c438b46babadb8ef1b
+      internalID: -1230631419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Fall_1
+      name: _Attack2NoMovement_1
       rect:
         serializedVersion: 2
-        x: 159
+        x: 146
         y: 0
-        width: 29
-        height: 38
+        width: 42
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f494679b5569fe45b76afcd32b721a3
-      internalID: -1815228362
+      spriteID: 634e639d631a9db48b4ed7643bf5ad70
+      internalID: 1874948003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Fall_2
+      name: _Attack2NoMovement_2
       rect:
         serializedVersion: 2
-        x: 279
+        x: 267
         y: 0
-        width: 29
-        height: 38
+        width: 77
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +161,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b33f6e93e987ec4ea88ed4635dc258e
-      internalID: -432832414
+      spriteID: 12f1605be588c124b9f55d533ca44074
+      internalID: -531067489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Attack2NoMovement_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2122b1df2ddfb5418ecd28952ca0bd2
+      internalID: -1528484952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Attack2NoMovement_4
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e64fe59d084f0409cbc1385ef1238d
+      internalID: 204247895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Attack2NoMovement_5
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5945ac97337ad4aa92d847c82e0cbe
+      internalID: -1464330138
       vertices: []
       indices: 
       edges: []
@@ -178,9 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      _Fall_0: -154271472
-      _Fall_1: -1815228362
-      _Fall_2: -432832414
+      _Attack2NoMovement_3: -1528484952
+      _Attack2NoMovement_5: -1464330138
+      _Attack2NoMovement_2: -531067489
+      _Attack2NoMovement_4: 204247895
+      _Attack2NoMovement_0: -1230631419
+      _Attack2NoMovement_1: 1874948003
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

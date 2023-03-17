@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6721494268948969605, guid: 4cbcee6bfd870064abdbfbde9fecb4e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -40.46
+      value: -40.514
       objectReference: {fileID: 0}
     - target: {fileID: 6721494268948969605, guid: 4cbcee6bfd870064abdbfbde9fecb4e5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -267,7 +267,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 673458899}
   - component: {fileID: 673458901}
   - component: {fileID: 673458900}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -401,7 +401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 859525661}
   - component: {fileID: 859525662}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CM vcam1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,13 +416,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859525660}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.35743368, z: -10}
-  m_LocalScale: {x: 0.16986015, y: 0.157532, z: 1}
+  m_LocalPosition: {x: -46.43, y: -37.75304, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 673458899}
-  m_Father: {fileID: 1713821933}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &859525662
 MonoBehaviour:
@@ -2432,7 +2432,7 @@ GameObject:
   - component: {fileID: 1713821935}
   - component: {fileID: 1713821937}
   - component: {fileID: 1713821938}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2504,7 +2504,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2136844039}
-  - {fileID: 859525661}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7024,7 +7023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2136844039}
   - component: {fileID: 2136844040}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: isGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}

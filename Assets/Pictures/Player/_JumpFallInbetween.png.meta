@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6506e7352cf99ad46ae04e2c8080aee0
+guid: cf068dd018f988342bb7b50b409e3767
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: _Jump_0
+      name: _JumpFallInbetween_0
       rect:
         serializedVersion: 2
-        x: 44
-        y: 0
-        width: 25
-        height: 38
+        x: 41
+        y: 1
+        width: 27
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7d304fc30e30274ca08d047002dcefa
-      internalID: -807608279
+      spriteID: d98b69a10180dcd44a020b90cfb25180
+      internalID: 2105733057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Jump_1
+      name: _JumpFallInbetween_1
       rect:
         serializedVersion: 2
-        x: 164
-        y: 0
-        width: 25
-        height: 38
+        x: 159
+        y: 1
+        width: 29
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,29 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1e13c264fc1fbf4da9aefab9453dc82
-      internalID: 2075100755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: _Jump_2
-      rect:
-        serializedVersion: 2
-        x: 284
-        y: 0
-        width: 25
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4498802a5e7212a44a55c1dbe9c8c9ad
-      internalID: -1379907781
+      spriteID: 5b278d720cc74b34cb72a18c37de4506
+      internalID: -1122771074
       vertices: []
       indices: 
       edges: []
@@ -178,9 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      _Jump_0: -807608279
-      _Jump_1: 2075100755
-      _Jump_2: -1379907781
+      _JumpFallInbetween_1: -1122771074
+      _JumpFallInbetween_0: 2105733057
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

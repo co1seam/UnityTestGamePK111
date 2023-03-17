@@ -9,6 +9,10 @@ public class ChickenController : MonoBehaviour
     [SerializeField]
     float maxDistance = 2f;
     int dir = 1;
+    float rad = 0.65f;
+    [SerializeField]
+    LayerMask mask;
+
     void Start()
     {
         startPos = transform.position;
@@ -25,11 +29,21 @@ public class ChickenController : MonoBehaviour
             ChickenFlip();
         }
         rb2d.velocity = Vector2.right * dir * 2;
+
+        Collider2D Player = Physics2D.OverlapCircle(transform.position, rad, mask);
+        Debug.Log(Player);
+
+        if (Player != null && Player.name.Equals("player"))
+        {
+            Player.GetComponent<PlayerController>().TakeDmg(1, transform.position.x);
+        }
     }
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position + new Vector3(maxDistance, 0, 0), 0.1f);
         Gizmos.DrawWireSphere(transform.position - new Vector3(maxDistance, 0, 0), 0.1f);
+
+        Gizmos.DrawWireSphere(transform.position, rad);
     }
     void ChickenFlip()
     {
@@ -39,15 +53,7 @@ public class ChickenController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            other.GetComponent<PlayerController>().TakeDmg(1);
-            if(transform.position.x > other.transform.position.x)
-            {
-                other.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.left * 5, ForceMode2D.Impulse);
-            }
-            else
-            {
-                other.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.right * 5, ForceMode2D.Impulse);
-            }
+            other.GetComponent<PlayerController>().TakeDmg(1, transform.position.x);
         }
     }
 }
